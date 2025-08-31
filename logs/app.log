@@ -1,0 +1,144 @@
+2025-08-30 16:06:39.436 | INFO     | __main__:telegram_log_test:101 - Сейчас будет проверка данных telegram
+2025-08-30 16:06:39.458 | INFO     | __main__:telegram_log_test:110 - Должны быть заполнены поля ТОКЕН TELEGRAM и CHAT ID TELEGRAM
+2025-08-30 16:07:45.144 | INFO     | __main__:telegram_log_test:101 - Сейчас будет проверка данных telegram
+2025-08-30 16:07:48.690 | DEBUG    | tg_sender:__send_to_tg:35 - Ошибка при отправке (попытка 1): 400 Client Error: Bad Request for url: https://api.telegram.org/bot8308748359:AAGyICpQCZChZFJeh_UNdurAp8P0YdNffSM/sendMessage
+2025-08-30 16:07:48.692 | DEBUG    | tg_sender:__send_to_tg:36 - Это тестовое сообщение
+2025-08-30 16:07:54.279 | DEBUG    | tg_sender:__send_to_tg:35 - Ошибка при отправке (попытка 2): 400 Client Error: Bad Request for url: https://api.telegram.org/bot8308748359:AAGyICpQCZChZFJeh_UNdurAp8P0YdNffSM/sendMessage
+2025-08-30 16:07:54.280 | DEBUG    | tg_sender:__send_to_tg:36 - Это тестовое сообщение
+2025-08-30 16:07:54.282 | DEBUG    | tg_sender:__send_to_tg:40 - Не удалось отправить сообщение после всех попыток.
+2025-08-30 16:08:16.735 | INFO     | __main__:telegram_log_test:101 - Сейчас будет проверка данных telegram
+2025-08-30 16:08:17.202 | DEBUG    | tg_sender:__send_to_tg:32 - Сообщение успешно отправлено (попытка 1)
+2025-08-30 16:08:27.446 | INFO     | __main__:start_parser:142 - Старт
+2025-08-30 16:08:27.449 | DEBUG    | __main__:save_config:86 - Настройки сохранены в config.toml
+2025-08-30 16:08:27.460 | INFO     | parser_cls:get_proxy_obj:62 - Работаем без прокси
+2025-08-30 16:08:27.620 | INFO     | parser_cls:__init__:45 - Запуск AvitoParse с настройками:
+AvitoConfig(urls=['https://www.avito.ru/all/transport?q=kews'], proxy_string='', proxy_change_url='', keys_word_white_list=[], keys_word_black_list=[], seller_black_list=[], count=1, tg_token='8308748359:AAGyICpQCZChZFJeh_UNdurAp8P0YdNffSM', tg_chat_id=['293671393'], max_price=9999999999, min_price=1000, geo='', max_age=600, debug_mode=0, pause_general=60, pause_between_links=5, max_count_of_retry=5, ignore_reserv=True, ignore_promotion=False)
+2025-08-30 16:08:28.869 | DEBUG    | parser_cls:fetch_data:118 - Попытка 1: 200
+2025-08-30 16:08:29.249 | INFO     | parser_cls:filter_ads:218 - После фильтрации _filter_by_price_range осталось 50
+2025-08-30 16:08:29.251 | INFO     | parser_cls:filter_ads:218 - После фильтрации _filter_by_black_keywords осталось 50
+2025-08-30 16:08:29.253 | INFO     | parser_cls:filter_ads:218 - После фильтрации _filter_by_white_keyword осталось 50
+2025-08-30 16:08:29.256 | INFO     | parser_cls:filter_ads:218 - После фильтрации _filter_by_address осталось 50
+2025-08-30 16:08:29.275 | INFO     | parser_cls:filter_ads:218 - После фильтрации _filter_viewed осталось 50
+2025-08-30 16:08:29.277 | INFO     | parser_cls:filter_ads:218 - После фильтрации _filter_by_seller осталось 50
+2025-08-30 16:08:29.279 | INFO     | parser_cls:filter_ads:218 - После фильтрации _filter_by_recent_time осталось 1
+2025-08-30 16:08:29.281 | INFO     | parser_cls:filter_ads:218 - После фильтрации _filter_by_reserve осталось 1
+2025-08-30 16:08:29.282 | INFO     | parser_cls:filter_ads:218 - После фильтрации _filter_by_promotion осталось 1
+2025-08-30 16:08:29.729 | DEBUG    | tg_sender:__send_to_tg:32 - Сообщение успешно отправлено (попытка 1)
+2025-08-30 16:08:29.731 | INFO     | parser_cls:parse:174 - Сохраняю в result/all.xlsx
+2025-08-30 16:08:29.950 | INFO     | parser_cls:parse:180 - Пауза 5 сек.
+2025-08-30 16:08:34.957 | INFO     | __main__:start_parser:155 - Пауза между повторами
+2025-08-30 16:09:34.570 | DEBUG    | __main__:stop_parser:168 - Стоп
+2025-08-30 16:09:34.990 | INFO     | __main__:start_parser:159 - Завершено
+2025-08-30 16:10:25.414 | INFO     | __main__:start_parser:142 - Старт
+2025-08-30 16:10:25.419 | DEBUG    | __main__:save_config:86 - Настройки сохранены в config.toml
+2025-08-30 16:10:25.427 | INFO     | parser_cls:get_proxy_obj:62 - Работаем без прокси
+2025-08-30 16:10:25.430 | INFO     | parser_cls:__init__:45 - Запуск AvitoParse с настройками:
+AvitoConfig(urls=['https://www.avito.ru/all/transport?q=kews'], proxy_string='', proxy_change_url='', keys_word_white_list=[], keys_word_black_list=[], seller_black_list=[], count=1, tg_token='8308748359:AAGyICpQCZChZFJeh_UNdurAp8P0YdNffSM', tg_chat_id=['293671393'], max_price=9999999999, min_price=1000, geo='', max_age=600, debug_mode=0, pause_general=60, pause_between_links=5, max_count_of_retry=5, ignore_reserv=True, ignore_promotion=False)
+2025-08-30 16:10:26.363 | DEBUG    | parser_cls:fetch_data:118 - Попытка 1: 200
+2025-08-30 16:10:26.673 | INFO     | parser_cls:filter_ads:218 - После фильтрации _filter_by_price_range осталось 50
+2025-08-30 16:10:26.675 | INFO     | parser_cls:filter_ads:218 - После фильтрации _filter_by_black_keywords осталось 50
+2025-08-30 16:10:26.677 | INFO     | parser_cls:filter_ads:218 - После фильтрации _filter_by_white_keyword осталось 50
+2025-08-30 16:10:26.678 | INFO     | parser_cls:filter_ads:218 - После фильтрации _filter_by_address осталось 50
+2025-08-30 16:10:26.696 | INFO     | parser_cls:filter_ads:218 - После фильтрации _filter_viewed осталось 49
+2025-08-30 16:10:26.699 | INFO     | parser_cls:filter_ads:218 - После фильтрации _filter_by_seller осталось 49
+2025-08-30 16:10:26.701 | INFO     | parser_cls:filter_ads:218 - После фильтрации _filter_by_recent_time осталось 0
+2025-08-30 16:10:26.703 | INFO     | parser_cls:parse:174 - Сохраняю в result/all.xlsx
+2025-08-30 16:10:26.707 | INFO     | parser_cls:parse:180 - Пауза 5 сек.
+2025-08-30 16:10:31.714 | INFO     | __main__:start_parser:155 - Пауза между повторами
+2025-08-30 16:11:31.747 | INFO     | parser_cls:get_proxy_obj:62 - Работаем без прокси
+2025-08-30 16:11:31.749 | INFO     | parser_cls:__init__:45 - Запуск AvitoParse с настройками:
+AvitoConfig(urls=['https://www.avito.ru/all/transport?q=kews'], proxy_string='', proxy_change_url='', keys_word_white_list=[], keys_word_black_list=[], seller_black_list=[], count=1, tg_token='8308748359:AAGyICpQCZChZFJeh_UNdurAp8P0YdNffSM', tg_chat_id=['293671393'], max_price=9999999999, min_price=1000, geo='', max_age=600, debug_mode=0, pause_general=60, pause_between_links=5, max_count_of_retry=5, ignore_reserv=True, ignore_promotion=False)
+2025-08-30 16:11:32.634 | DEBUG    | parser_cls:fetch_data:118 - Попытка 1: 200
+2025-08-30 16:11:32.989 | INFO     | parser_cls:filter_ads:218 - После фильтрации _filter_by_price_range осталось 50
+2025-08-30 16:11:32.991 | INFO     | parser_cls:filter_ads:218 - После фильтрации _filter_by_black_keywords осталось 50
+2025-08-30 16:11:32.993 | INFO     | parser_cls:filter_ads:218 - После фильтрации _filter_by_white_keyword осталось 50
+2025-08-30 16:11:32.995 | INFO     | parser_cls:filter_ads:218 - После фильтрации _filter_by_address осталось 50
+2025-08-30 16:11:33.012 | INFO     | parser_cls:filter_ads:218 - После фильтрации _filter_viewed осталось 49
+2025-08-30 16:11:33.014 | INFO     | parser_cls:filter_ads:218 - После фильтрации _filter_by_seller осталось 49
+2025-08-30 16:11:33.016 | INFO     | parser_cls:filter_ads:218 - После фильтрации _filter_by_recent_time осталось 0
+2025-08-30 16:11:33.018 | INFO     | parser_cls:parse:174 - Сохраняю в result/all.xlsx
+2025-08-30 16:11:33.020 | INFO     | parser_cls:parse:180 - Пауза 5 сек.
+2025-08-30 16:11:38.026 | INFO     | __main__:start_parser:155 - Пауза между повторами
+2025-08-30 16:11:49.176 | DEBUG    | __main__:stop_parser:168 - Стоп
+2025-08-30 16:11:50.035 | INFO     | __main__:start_parser:159 - Завершено
+2025-08-31 11:38:22.608 | INFO     | __main__:start_parser:142 - Старт
+2025-08-31 11:38:22.615 | DEBUG    | __main__:save_config:86 - Настройки сохранены в config.toml
+2025-08-31 11:38:22.636 | INFO     | parser_cls:get_proxy_obj:62 - Работаем без прокси
+2025-08-31 11:38:22.726 | INFO     | parser_cls:__init__:45 - Запуск AvitoParse с настройками:
+AvitoConfig(urls=['https://www.avito.ru/all/transport?q=kews'], proxy_string='', proxy_change_url='', keys_word_white_list=[], keys_word_black_list=[], seller_black_list=[], count=1, tg_token='8308748359:AAGyICpQCZChZFJeh_UNdurAp8P0YdNffSM', tg_chat_id=['293671393'], max_price=9999999999, min_price=1000, geo='', max_age=0, debug_mode=0, pause_general=60, pause_between_links=5, max_count_of_retry=5, ignore_reserv=True, ignore_promotion=False)
+2025-08-31 11:38:23.764 | DEBUG    | parser_cls:fetch_data:118 - Попытка 1: 200
+2025-08-31 11:38:24.132 | INFO     | parser_cls:filter_ads:218 - После фильтрации _filter_by_price_range осталось 49
+2025-08-31 11:38:24.134 | INFO     | parser_cls:filter_ads:218 - После фильтрации _filter_by_black_keywords осталось 49
+2025-08-31 11:38:24.136 | INFO     | parser_cls:filter_ads:218 - После фильтрации _filter_by_white_keyword осталось 49
+2025-08-31 11:38:24.137 | INFO     | parser_cls:filter_ads:218 - После фильтрации _filter_by_address осталось 49
+2025-08-31 11:38:24.160 | INFO     | parser_cls:filter_ads:218 - После фильтрации _filter_viewed осталось 49
+2025-08-31 11:38:24.162 | INFO     | parser_cls:filter_ads:218 - После фильтрации _filter_by_seller осталось 49
+2025-08-31 11:38:24.164 | INFO     | parser_cls:filter_ads:218 - После фильтрации _filter_by_recent_time осталось 49
+2025-08-31 11:38:24.166 | INFO     | parser_cls:filter_ads:218 - После фильтрации _filter_by_reserve осталось 49
+2025-08-31 11:38:24.168 | INFO     | parser_cls:filter_ads:218 - После фильтрации _filter_by_promotion осталось 49
+2025-08-31 11:38:24.711 | DEBUG    | tg_sender:__send_to_tg:32 - Сообщение успешно отправлено (попытка 1)
+2025-08-31 11:38:25.141 | DEBUG    | tg_sender:__send_to_tg:32 - Сообщение успешно отправлено (попытка 1)
+2025-08-31 11:38:25.559 | DEBUG    | tg_sender:__send_to_tg:32 - Сообщение успешно отправлено (попытка 1)
+2025-08-31 11:38:25.980 | DEBUG    | tg_sender:__send_to_tg:32 - Сообщение успешно отправлено (попытка 1)
+2025-08-31 11:38:26.419 | DEBUG    | tg_sender:__send_to_tg:32 - Сообщение успешно отправлено (попытка 1)
+2025-08-31 11:38:26.848 | DEBUG    | tg_sender:__send_to_tg:32 - Сообщение успешно отправлено (попытка 1)
+2025-08-31 11:38:27.262 | DEBUG    | tg_sender:__send_to_tg:32 - Сообщение успешно отправлено (попытка 1)
+2025-08-31 11:38:27.695 | DEBUG    | tg_sender:__send_to_tg:32 - Сообщение успешно отправлено (попытка 1)
+2025-08-31 11:38:28.137 | DEBUG    | tg_sender:__send_to_tg:32 - Сообщение успешно отправлено (попытка 1)
+2025-08-31 11:38:28.574 | DEBUG    | tg_sender:__send_to_tg:32 - Сообщение успешно отправлено (попытка 1)
+2025-08-31 11:38:29.031 | DEBUG    | tg_sender:__send_to_tg:32 - Сообщение успешно отправлено (попытка 1)
+2025-08-31 11:38:29.454 | DEBUG    | tg_sender:__send_to_tg:32 - Сообщение успешно отправлено (попытка 1)
+2025-08-31 11:38:29.878 | DEBUG    | tg_sender:__send_to_tg:32 - Сообщение успешно отправлено (попытка 1)
+2025-08-31 11:38:30.337 | DEBUG    | tg_sender:__send_to_tg:32 - Сообщение успешно отправлено (попытка 1)
+2025-08-31 11:38:30.793 | DEBUG    | tg_sender:__send_to_tg:32 - Сообщение успешно отправлено (попытка 1)
+2025-08-31 11:38:31.466 | DEBUG    | tg_sender:__send_to_tg:32 - Сообщение успешно отправлено (попытка 1)
+2025-08-31 11:38:32.046 | DEBUG    | tg_sender:__send_to_tg:32 - Сообщение успешно отправлено (попытка 1)
+2025-08-31 11:38:32.584 | DEBUG    | tg_sender:__send_to_tg:32 - Сообщение успешно отправлено (попытка 1)
+2025-08-31 11:38:33.031 | DEBUG    | tg_sender:__send_to_tg:32 - Сообщение успешно отправлено (попытка 1)
+2025-08-31 11:38:33.459 | DEBUG    | tg_sender:__send_to_tg:32 - Сообщение успешно отправлено (попытка 1)
+2025-08-31 11:38:34.176 | DEBUG    | tg_sender:__send_to_tg:32 - Сообщение успешно отправлено (попытка 1)
+2025-08-31 11:38:35.640 | DEBUG    | tg_sender:__send_to_tg:32 - Сообщение успешно отправлено (попытка 1)
+2025-08-31 11:38:36.065 | DEBUG    | tg_sender:__send_to_tg:32 - Сообщение успешно отправлено (попытка 1)
+2025-08-31 11:38:36.483 | DEBUG    | tg_sender:__send_to_tg:32 - Сообщение успешно отправлено (попытка 1)
+2025-08-31 11:38:37.929 | DEBUG    | tg_sender:__send_to_tg:32 - Сообщение успешно отправлено (попытка 1)
+2025-08-31 11:38:39.391 | DEBUG    | tg_sender:__send_to_tg:32 - Сообщение успешно отправлено (попытка 1)
+2025-08-31 11:38:39.838 | DEBUG    | tg_sender:__send_to_tg:32 - Сообщение успешно отправлено (попытка 1)
+2025-08-31 11:38:40.274 | DEBUG    | tg_sender:__send_to_tg:32 - Сообщение успешно отправлено (попытка 1)
+2025-08-31 11:38:40.703 | DEBUG    | tg_sender:__send_to_tg:32 - Сообщение успешно отправлено (попытка 1)
+2025-08-31 11:38:41.131 | DEBUG    | tg_sender:__send_to_tg:32 - Сообщение успешно отправлено (попытка 1)
+2025-08-31 11:38:41.560 | DEBUG    | tg_sender:__send_to_tg:32 - Сообщение успешно отправлено (попытка 1)
+2025-08-31 11:38:41.994 | DEBUG    | tg_sender:__send_to_tg:32 - Сообщение успешно отправлено (попытка 1)
+2025-08-31 11:38:42.425 | DEBUG    | tg_sender:__send_to_tg:32 - Сообщение успешно отправлено (попытка 1)
+2025-08-31 11:38:42.865 | DEBUG    | tg_sender:__send_to_tg:32 - Сообщение успешно отправлено (попытка 1)
+2025-08-31 11:38:44.296 | DEBUG    | tg_sender:__send_to_tg:32 - Сообщение успешно отправлено (попытка 1)
+2025-08-31 11:38:45.724 | DEBUG    | tg_sender:__send_to_tg:32 - Сообщение успешно отправлено (попытка 1)
+2025-08-31 11:38:46.156 | DEBUG    | tg_sender:__send_to_tg:32 - Сообщение успешно отправлено (попытка 1)
+2025-08-31 11:38:47.594 | DEBUG    | tg_sender:__send_to_tg:32 - Сообщение успешно отправлено (попытка 1)
+2025-08-31 11:38:48.055 | DEBUG    | tg_sender:__send_to_tg:32 - Сообщение успешно отправлено (попытка 1)
+2025-08-31 11:38:48.489 | DEBUG    | tg_sender:__send_to_tg:32 - Сообщение успешно отправлено (попытка 1)
+2025-08-31 11:38:51.402 | DEBUG    | tg_sender:__send_to_tg:32 - Сообщение успешно отправлено (попытка 1)
+2025-08-31 11:38:52.828 | DEBUG    | tg_sender:__send_to_tg:32 - Сообщение успешно отправлено (попытка 1)
+2025-08-31 11:38:54.269 | DEBUG    | tg_sender:__send_to_tg:32 - Сообщение успешно отправлено (попытка 1)
+2025-08-31 11:38:54.701 | DEBUG    | tg_sender:__send_to_tg:32 - Сообщение успешно отправлено (попытка 1)
+2025-08-31 11:38:55.156 | DEBUG    | tg_sender:__send_to_tg:32 - Сообщение успешно отправлено (попытка 1)
+2025-08-31 11:38:56.603 | DEBUG    | tg_sender:__send_to_tg:32 - Сообщение успешно отправлено (попытка 1)
+2025-08-31 11:38:58.027 | DEBUG    | tg_sender:__send_to_tg:32 - Сообщение успешно отправлено (попытка 1)
+2025-08-31 11:38:58.477 | DEBUG    | tg_sender:__send_to_tg:32 - Сообщение успешно отправлено (попытка 1)
+2025-08-31 11:38:59.921 | DEBUG    | tg_sender:__send_to_tg:32 - Сообщение успешно отправлено (попытка 1)
+2025-08-31 11:38:59.924 | INFO     | parser_cls:parse:174 - Сохраняю в result/all.xlsx
+2025-08-31 11:39:00.171 | INFO     | parser_cls:parse:180 - Пауза 5 сек.
+2025-08-31 11:39:05.190 | INFO     | __main__:start_parser:155 - Пауза между повторами
+2025-08-31 11:40:05.230 | INFO     | parser_cls:get_proxy_obj:62 - Работаем без прокси
+2025-08-31 11:40:05.232 | INFO     | parser_cls:__init__:45 - Запуск AvitoParse с настройками:
+AvitoConfig(urls=['https://www.avito.ru/all/transport?q=kews'], proxy_string='', proxy_change_url='', keys_word_white_list=[], keys_word_black_list=[], seller_black_list=[], count=1, tg_token='8308748359:AAGyICpQCZChZFJeh_UNdurAp8P0YdNffSM', tg_chat_id=['293671393'], max_price=9999999999, min_price=1000, geo='', max_age=0, debug_mode=0, pause_general=60, pause_between_links=5, max_count_of_retry=5, ignore_reserv=True, ignore_promotion=False)
+2025-08-31 11:40:06.053 | DEBUG    | parser_cls:fetch_data:118 - Попытка 1: 200
+2025-08-31 11:40:06.432 | INFO     | parser_cls:filter_ads:218 - После фильтрации _filter_by_price_range осталось 49
+2025-08-31 11:40:06.434 | INFO     | parser_cls:filter_ads:218 - После фильтрации _filter_by_black_keywords осталось 49
+2025-08-31 11:40:06.436 | INFO     | parser_cls:filter_ads:218 - После фильтрации _filter_by_white_keyword осталось 49
+2025-08-31 11:40:06.437 | INFO     | parser_cls:filter_ads:218 - После фильтрации _filter_by_address осталось 49
+2025-08-31 11:40:06.456 | INFO     | parser_cls:filter_ads:218 - После фильтрации _filter_viewed осталось 0
+2025-08-31 11:40:06.458 | INFO     | parser_cls:parse:174 - Сохраняю в result/all.xlsx
+2025-08-31 11:40:06.460 | INFO     | parser_cls:parse:180 - Пауза 5 сек.
+2025-08-31 11:40:11.465 | INFO     | __main__:start_parser:155 - Пауза между повторами
+2025-08-31 11:40:15.765 | DEBUG    | __main__:stop_parser:168 - Стоп
+2025-08-31 11:40:16.469 | INFO     | __main__:start_parser:159 - Завершено
