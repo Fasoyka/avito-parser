@@ -1,0 +1,23 @@
+[avito]
+tg_token = "8308748359:AAGyICpQCZChZFJeh_UNdurAp8P0YdNffSM"
+tg_chat_id = [
+    "293671393",
+]
+urls = [
+    "https://www.avito.ru/all/transport?q=kews",
+]
+count = 1
+keys_word_white_list = []
+keys_word_black_list = []
+seller_black_list = []
+max_price = 9999999999
+min_price = 1000
+geo = ""
+proxy_string = ""
+proxy_change_url = ""
+pause_general = 60
+pause_between_links = 5
+max_age = 0
+max_count_of_retry = 5
+ignore_reserv = true
+ignore_promotion = false
