@@ -138,9 +138,9 @@ class PlaywrightClient:
             await self.launch_browser()
             return await self.load_page(url)
         finally:
-            if hasattr(self, "browser"):
+            if self.browser is not None:
                 await self.browser.close()
-            if hasattr(self, "playwright"):
+            if getattr(self, "playwright", None) is not None:
                 await self.playwright.stop()
 
     async def get_cookies(self, url: str) -> dict:
