@@ -168,6 +168,9 @@ class AvitoParse:
 
                 filter_ads = self.filter_ads(ads=ads)
 
+                for ad in filter_ads:
+                    self.fetch_views(ad)
+
                 if self.tg_handler:
                     self._send_to_tg(ads=filter_ads)
 
@@ -198,6 +201,38 @@ class AvitoParse:
         except Exception as err:
             logger.error(f"Ошибка при поиске информации на странице: {err}")
         return {}
+
+    def fetch_views(self, ad: Item) -> None:
+        url = f"https://www.avito.ru/{ad.urlPath}"
+        html_code = self.fetch_data(url=url, retries=self.config.max_count_of_retry)
+        if not html_code:
+            return
+
+        data = self.find_json_on_page(html_code=html_code)
+        total, today = self._extract_views_from_json(data)
+        ad.views = total
+        ad.viewsToday = today
+
+    @staticmethod
+    def _extract_views_from_json(data: dict) -> tuple[int | None, int | None]:
+        def search(obj):
+            if isinstance(obj, dict):
+                if {'total', 'today'}.issubset(obj.keys()):
+                    return obj.get('total'), obj.get('today')
+                if {'count', 'today'}.issubset(obj.keys()):
+                    return obj.get('count'), obj.get('today')
+                for value in obj.values():
+                    res = search(value)
+                    if res != (None, None):
+                        return res
+            elif isinstance(obj, list):
+                for item in obj:
+                    res = search(item)
+                    if res != (None, None):
+                        return res
+            return (None, None)
+
+        return search(data)
 
     def filter_ads(self, ads: list[Item]) -> list[Item]:
         """Сортирует объявления"""

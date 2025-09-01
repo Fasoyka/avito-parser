@@ -145,6 +145,8 @@ class Item(BaseModel):
     isSparePartsCompatibility: bool | None = None
     sellerId: str | None = None
     isPromotion: bool = False
+    views: int | None = None
+    viewsToday: int | None = None
 
 
 class ItemsResponse(BaseModel):
